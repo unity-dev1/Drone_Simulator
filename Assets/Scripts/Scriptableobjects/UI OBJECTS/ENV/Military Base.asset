@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3739b18c196500942b62a42669432279, type: 3}
+  m_Name: Military Base
+  m_EditorClassIdentifier: 
+  index: 2
+  environmentName: Defence Zone
+  info: lorem ipsum
+  image: {fileID: 21300000, guid: d31b1c00f0523554fa112230d8135573, type: 3}
+  availableScenarios:
+  - {fileID: 11400000, guid: e63a2ee640f837143b45f71daecd21cc, type: 2}
+  - {fileID: 11400000, guid: 02b140b94f5b86f49b621a461bf68307, type: 2}
+  - {fileID: 11400000, guid: 64bc36936f7d97840ab8d7b4de274d6a, type: 2}
+  availableDrones:
+  - {fileID: 11400000, guid: 04c5dffa36afc374292e8fe8589b21ca, type: 2}
+  - {fileID: 11400000, guid: 84f6ff94a3f787247b7151ea935f010a, type: 2}
+  - {fileID: 11400000, guid: 38370161b60767541b010c7aa96a5000, type: 2}
+  - {fileID: 11400000, guid: dfa1c7de48a1d2445bd475756ab0caa2, type: 2}
+  details: "The defence zone near the border is a high-stakes virtual area , pilot
+    drones to patrol and secure national boundaries. It features realistic terrain,
+    enemy threats, and advanced surveillance\_systems."
+  hatchMinX: -625
+  hatchMaxX: 625
+  hatchMinY: -350
+  hatchMaxY: 350

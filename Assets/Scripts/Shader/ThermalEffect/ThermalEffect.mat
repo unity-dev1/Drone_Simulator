@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: ThermalEffect
+  m_Shader: {fileID: 4800000, guid: 50a220e83e82a254594e4b5821434798, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs: []
+    m_Ints: []
+    m_Floats:
+    - _Contrast: 0.678
+    - _Intensity: 2
+    - _NoiseScale: 0
+    - _NoiseStrength: 0.19
+    - _Opacity: 1
+    m_Colors:
+    - _ColdColor: {r: 1, g: 0.4627451, b: 0, a: 1}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _HotColor: {r: 1, g: 0.24644172, b: 0, a: 1}
+    - _MidColor: {r: 0.10980392, g: 0.2784314, b: 1, a: 1}
+    - _WarmColor: {r: 0.745283, g: 0.108139105, b: 0, a: 1}
+  m_BuildTextureStacks: []
+  m_AllowLocking: 1
