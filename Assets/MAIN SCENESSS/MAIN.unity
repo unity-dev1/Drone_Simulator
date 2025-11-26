@@ -17409,9 +17409,9 @@ MonoBehaviour:
   selectedEnvironment: {fileID: 0}
   selectedScenario: {fileID: 0}
   selectedDrone: {fileID: 0}
-  isSignIN: 0
+  isSignIN: 1
   currentUserName: 
-  isPro: 0
+  isPro: 1
   userPlan: 
   activeScreenIndex: 0
 --- !u!4 &1572692134
