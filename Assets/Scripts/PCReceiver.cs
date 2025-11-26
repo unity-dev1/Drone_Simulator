@@ -563,6 +563,7 @@ public class PCReceiver : MonoBehaviour
             using (Process clearProcess = new Process())
             {
                 clearProcess.StartInfo.FileName = @"C:\Android\platform-tools\adb.exe";
+                //clearProcess.StartInfo.FileName = @"C:\Program Files\Unity\Hub\Editor\6000.0.59f2\Editor\Data\PlaybackEngines\AndroidPlayer\Tools\platform-tools\adb.exe";
                 clearProcess.StartInfo.Arguments = "logcat -c";
                 clearProcess.StartInfo.UseShellExecute = false;
                 clearProcess.StartInfo.CreateNoWindow = true;
@@ -572,6 +573,7 @@ public class PCReceiver : MonoBehaviour
 
             currentADBProcess = new Process();
             currentADBProcess.StartInfo.FileName = @"C:\Android\platform-tools\adb.exe";
+            //currentADBProcess.StartInfo.FileName = @"C:\Program Files\Unity\Hub\Editor\6000.0.59f2\Editor\Data\PlaybackEngines\AndroidPlayer\Tools\platform-tools\adb.exe";
             currentADBProcess.StartInfo.Arguments = "logcat -v time Unity:V *:S";
             currentADBProcess.StartInfo.UseShellExecute = false;
             currentADBProcess.StartInfo.RedirectStandardOutput = true;
@@ -1025,6 +1027,7 @@ public class PCReceiver : MonoBehaviour
             using (Process checkProcess = new Process())
             {
                 checkProcess.StartInfo.FileName = @"C:\Android\platform-tools\adb.exe";
+
                 checkProcess.StartInfo.Arguments = "devices";
                 checkProcess.StartInfo.UseShellExecute = false;
                 checkProcess.StartInfo.RedirectStandardOutput = true;
@@ -1279,7 +1282,9 @@ public class PCReceiver : MonoBehaviour
         {
             using (Process startServer = new Process())
             {
+                //if your adb.exe loction varies it throw a error so hardcore change it 
                 startServer.StartInfo.FileName = @"C:\Android\platform-tools\adb.exe";
+                //startServer.StartInfo.FileName = @"C:\Program Files\Unity\Hub\Editor\6000.0.59f2\Editor\Data\PlaybackEngines\AndroidPlayer\Tools\platform-tools\adb.exe";
                 startServer.StartInfo.Arguments = "start-server";
                 startServer.StartInfo.UseShellExecute = false;
                 startServer.StartInfo.CreateNoWindow = true;

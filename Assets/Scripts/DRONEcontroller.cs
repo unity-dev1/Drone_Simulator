@@ -74,10 +74,10 @@ public class DRONECONT : MonoBehaviour
     private float arrowKeyboardZ = 0f;
 
     // Final input values
-    private float finalVertical = 0f;
-    private float finalYaw = 0f;
-    private float finalHorizontalX = 0f;
-    private float finalHorizontalZ = 0f;
+    public float finalVertical = 0f;
+    public float finalYaw = 0f;
+    public float finalHorizontalX = 0f;
+    public float finalHorizontalZ = 0f;
 
     private bool pressedArm = false;
     public bool startupDone = false;
@@ -120,6 +120,9 @@ public class DRONECONT : MonoBehaviour
             maxSpeedLimit = speedSlider.minValue;
             speedSlider.onValueChanged.AddListener(OnSpeedSliderChanged);
         }
+
+        //added by sumeet Wakde to get drone controller reference for tutorial manager
+        gameObject.tag = "Player";
     }
 
     void OnDestroy()
@@ -165,7 +168,15 @@ public class DRONECONT : MonoBehaviour
         UpdateUIElements();
         UpdateUILogs();
     }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "Checkpoint")
+        {
+            // Destroy the checkpoint gameObject
+            other.gameObject.SetActive(false);
 
+        }
+    }
     void FixedUpdate()
     {
         if (!startupDone) return;
